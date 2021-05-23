@@ -1,9 +1,9 @@
 class Particle{
     constructor(x,y){
        var options = {
-           restitution:1,
-           friction: 0,
-           isStatic:false 
+            restitution: 1,
+            friction: 5,
+            density: 1 
        }
        this.r=10;
        this.body=Bodies.circle(x,y,this.r, options);
